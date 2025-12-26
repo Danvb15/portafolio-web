@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DanVb Solutions — Portafolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="containconer header-inner">
+      <img src="mi_logo.jpg" alt="mi logo">
+      <h1 class="burger">DanVb Solutions</h1>
+      <nav  type="submit" class="nav">
+        <a href="#proyectos" class="button" id="boton">Proyectos</a>
+        <a href="#servicios" class="button" id="boton">Servicios</a>
+        <a href="#sobre-mi" class="button"  id="boton">Sobre mí</a>
+        <a href="#contacto" class="button"  id="boton">Contactar</a>
+        </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container">
+        <h2 id="subtirulo" id="dev">Desarrollador Web</h2>
+        <p>Creo sitios web modernos que esten completamente optimizados a sus necesidades, responsivos y optimizados para negocios y freelancers</p>
+        <div class="cta">
+          <a href="#proyectos" class="btn-primary" id="proyecto">Ver proyectos</a>
+          <a href="#contacto" class="btn-primary" id="proyecto">Contactame</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="container section">
+      <h3>Proyectos destacados</h3>
+      <div class="grid">
+        <article class="card">
+          <div class="thumb" id="rrr">🐍💻</div>
+          <h4>JUEGOS CREADOS CON PYTHON</h4>
+          <p>VIEOJUEGO RETRO DanVb</p>
+          <p class="tags">HTML · CSS · EmailJS</p>
+          <div class="links">
+            <a href="#" class="link">Ver</a>
+            <a href="https://danvb15.itch.io/juego-retro" target="_blank" class="link">DESCARGA</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">⚙️</div>
+          <h4>PERFIL DE GITHUB</h4>
+          <p>PERFIL DE GIHUB CON PROYECTOS Y REPOSITORIOS</p>
+          <p class="tags">HTML · CSS · JS</p>
+          <div class="links">
+            <a href="#" class="link">Ver</a>
+            <a href="https://github.com/Danvb15/modelos-osi" target="_blank" class="link">Código</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">📊</div>
+          <h4>Mini test de modelos osi</h4>
+          <p>Pequeña app para gestionar tareas y mostrar métri.</p>
+          <p class="tags">HTML · CSS · JS</p>
+          <div class="links">
+            <a href="#" class="link">Ver</a>
+            <a href="https://danvb15.github.io/modelos-osi/" target="_blank" class="link">Código</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="servicios" class="container section alt">
+      <h3>Servicios</h3>
+      <ul class="services">
+        <li>Desarrollo de páginas web (HTML/CSS/JS)</li>
+        <li>Landing pages y portafolios</li>
+        <li>Integración EmailJS — formularios sin backend</li>
+        <li>Optimización móvil y SEO básico</li>
+        <li>Mantenimiento y actualizaciones</li>
+      </ul>
+    </section>
+
+    <section id="sobre-mi" class="container section">
+      <h3>Sobre mí</h3>
+      <div class="about">
+        <p>Soy DanVb — desarrollador web en formación con ganas de crear soluciones limpias y efectivas. Me especializo en HTML, CSS y JS, y me encanta transformar ideas en páginas que conviertan visitantes en clientes.</p>
+        <p>Si buscas alguien que haga tu web rápido y con buen diseño, puedo ayudarte.</p>
+      </div>
+    </section>
+
+    <section id="contacto" class="container section contact">
+      <h3>Contacto</h3>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h4>Correo</h4>
+          <p><a href="mailto:danieleliasvasquezbarros31@gmail.com">danieleliasvasquezbarros31@gmail.com</a></p>
+        </div>
+        <div class="contact-card">
+          <h4>WhatsApp</h4>
+          <p><a href="https://wa.me/573136619954" target="_blank">+57 313 661 9954</a></p>
+        </div>
+        <div class="contact-card">
+          <h4>GitHub</h4>
+          <p><a href="https://github.com/danvb15" target="_blank">github.com/danvb15</a></p>
+        </div>
+      </div>
+
+      <form id="contactForm" class="contact-form" onsubmit="sendEmail(event)">
+        <label>Nombre
+          <input type="text" name="name" required />
+        </label>
+        <label>Email
+          <input type="email" name="email" required />
+        </label>
+        <label>Mensaje
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button type="submit" class="btn-primary" id="submit">Enviar mensaje</button>
+        <p id="formMsg" class="form-msg" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 DanVb Solutions · Hecho con ❤️</p>
+      <p><a href="https://github.com/danvb15" target="_blank">GitHub</a></p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+  emailjs.init("BR1o7V_1wfCeqL71j"); // tu Public Key / User ID
+</script>
+
+  <script src="script.js"></script>
+</body>
+</html>
